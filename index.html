@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grow a Garden Values Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <img src="assets/banner.png" alt="GAGVAT Banner" class="banner" />
+    </header>
+    <main>
+        <input type="text" id="searchBar" placeholder="Search pets..." />
+        <div class="sort-buttons">
+            <button onclick="sortByValue()">Sort by Value</button>
+            <button onclick="sortByDemand()">Sort by Demand</button>
+        </div>
+        <table id="petTable">
+            <thead>
+                <tr>
+                    <th>Pet Name</th>
+                    <th>Value</th>
+                    <th>Demand</th>
+                    <th>Trading Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table content will be injected by script.js -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
